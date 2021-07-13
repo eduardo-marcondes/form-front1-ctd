@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!-- Versão 5 do HTML -->
+<html lang="pt-br"> <!-- Tag principal / Idioma da página -->
+
+<head>
+    <!-- Adobe Fontes -->
+    <link rel="stylesheet" href="https://use.typekit.net/pfn6cgf.css">
+    
+    <!-- Relacionando com o CSS -->
+    <link rel="stylesheet" href="./styles/styles.css"> 
+
+    <meta charset="UTF-8">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./img/lobo_icon_2.png">
+
+    <title>ShotLock</title>
+</head>
+<body>
+    <header>
+        <img src="./img/shot_logo_header.png"alt="Logo ShotLock">
+
+    </header>
+
+    <main>
+        <div class="container">
+            <img src="./img/shot_logo_preto.png" alt="Logo ShotLock">
+            <p>Preencha esse formulário para receber informações sobre o ShotLock para sua Arma!</p>
+
+            <!-- Iniciou o formulário -->
+            <form action="#" method="post">
+                <!-- Seção de dados para contato -->
+                <fieldset>
+                    <legend>Suas informações para contato</legend>
+                    
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome">
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+
+                    <label for="endereco">Telefone:</label>
+                    <input type="tel" name="telefone" id="telefone">
+                </fieldset>
+
+                <!-- Seção de Calibres -->
+                <fieldset>
+                    <legend>Calibres Disponíveis</legend>
+                    <select name="calibres" id="calibres">
+                        <option value="">Selecione uma opção</option>
+                        <optgroup label="Pistolas">
+                            <option value=".380acp">.380 ACP</option>
+                            <option value="9mmLuger">9mm Luger</option>
+                            <option value=".40s&w">.40 S&W</option>
+                            <option value=".45acp">.45 ACP</option>
+                        </optgroup>
+                        <optgroup label="Espingardas">
+                            <option value="12Ga">12 Ga</option>
+                        </optgroup>
+                    </select>
+                </fieldset>
+
+                <!-- Campo para informar marca e modelo da arma -->
+                <fieldset>
+                    <legend>Marca e Modelo da Arma</legend>
+                    <label for="marcaModelo">Escreva aqui:</label>
+                    <textarea name="marcaModelo" id="marcaModelo" cols="30" rows="5"></textarea>
+                </fieldset>
+
+                <!-- Seção para informar por onde nos conheceu -->
+                <fieldset>
+                    <legend>Por onde ficou sabendo do ShotLock</legend>
+
+                    <input type="checkbox" name="internet" id="internet" >
+                    <label for="internet">Internet</label>
+                    <input type="checkbox" name="revista" id="revista">
+                    <label for="revista">Revista</label>
+                    <input type="checkbox" name="televisao" id="televisao">
+                    <label for="televisao">TV</label>
+                    <input type="checkbox" name="outro" id="outro">
+                    <label for="outro">Outro</label>
+                </fieldset>
+
+                <!-- Seção de Botões -->
+                <button type="submit">Enviar</button>
+                <button type="reset">Cancelar</button>
+
+            </form>
+        </div>
+    </main>
+</body>
